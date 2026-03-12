@@ -1,13 +1,14 @@
 FROM php:8.2-apache
 
+# Enable Apache Rewrite Module
 RUN a2enmod rewrite
 
-# Disable all MPM modules except prefork
-RUN a2dismod mpm_event mpm_worker && a2enmod mpm_prefork
+WORKDIR /var/www/html
 
-COPY . /var/www/html/
+# Copy project files
+COPY . .
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+# Expose port
+EXPOSE 80
 
-CMD ["/start.sh"]
+CMD ["apache2-foreground"]

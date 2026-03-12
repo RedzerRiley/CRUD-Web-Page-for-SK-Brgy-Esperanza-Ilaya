@@ -1,14 +1,7 @@
-FROM php:8.2-apache
-
-# Enable Apache Rewrite Module
-RUN a2enmod rewrite
+FROM php:8.2-cli
 
 WORKDIR /var/www/html
 
-# Copy project files
 COPY . .
 
-# Expose port
-EXPOSE 80
-
-CMD ["apache2-foreground"]
+CMD php -S 0.0.0.0:$PORT

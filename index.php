@@ -66,6 +66,7 @@ function truncate($text, $limit = 120) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Official website of the Sangguniang Kabataan of Barangay Esperanza Ilaya. Stay updated on projects, programs, events, and announcements." />
   <title>SK Barangay Esperanza Ilaya — Official Website</title>
+  <link rel="icon" type="image/png" href="/assets/images/sk-logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>

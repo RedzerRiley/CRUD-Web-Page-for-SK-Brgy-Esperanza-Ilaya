@@ -457,7 +457,7 @@ try {
 <nav class="navbar">
   <div class="container">
     <a href="index.php" class="nav-brand">
-      <div class="nav-brand-logo">SK</div>
+      <img src="assets/images/sk-logo.png" alt="SK Logo" class="nav-brand-img" />
       <div class="nav-brand-text">
         <span class="title">SK Esperanza Ilaya</span>
         <span class="subtitle">Sangguniang Kabataan</span>
@@ -817,7 +817,7 @@ try {
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand-logo">SK</div>
+        <img src="assets/images/sk-logo.png" alt="SK Logo" class="nav-brand-img" />
         <div class="footer-brand-name">SK Barangay Esperanza Ilaya</div>
         <div class="footer-brand-sub">Sangguniang Kabataan</div>
         <p class="footer-brand-desc">

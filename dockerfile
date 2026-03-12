@@ -6,7 +6,7 @@ RUN a2enmod rewrite
 # Copy project files into container
 COPY . /var/www/html/
 
-# Set working directory
+# Set working directorys
 WORKDIR /var/www/html
 
 EXPOSE 80

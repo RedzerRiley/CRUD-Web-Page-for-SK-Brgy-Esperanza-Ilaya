@@ -1,12 +1,11 @@
 FROM php:8.2-apache
 
-# Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
-# Copy project files into container
+# Copy project files
 COPY . /var/www/html/
 
-# Set working directorys
 WORKDIR /var/www/html
 
-EXPOSE 80
+# Startup script to set port dynamically
+CMD bash -c "sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf && sed -i 's/Listen 80/Listen ${PORT}/g' /etc/apache2/ports.conf && apache2-foreground"

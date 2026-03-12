@@ -42,7 +42,6 @@ INSERT INTO category (category_name) VALUES
 ('Announcements'),
 ('Accomplishments');
 
--- Default super admin (password: admin123)
 INSERT INTO admin (username, password_hash, full_name, sk_position, is_super_admin) VALUES (
     'admin',
     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',

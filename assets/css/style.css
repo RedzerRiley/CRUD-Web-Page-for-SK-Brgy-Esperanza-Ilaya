@@ -119,6 +119,35 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 
+.nav-brand-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255,255,255,0.25);
+  flex-shrink: 0;
+}
+
+/* ── HERO LOGOS ── */
+.hero-logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.hero-logo-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+}
+
+.hero-logo-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(255,255,255,0.25);
+  flex-shrink: 0;
+}
+
 .nav-brand-text {
   display: flex;
   flex-direction: column;
@@ -304,23 +333,18 @@ ul { list-style: none; }
   flex-wrap: wrap;
 }
 
-.hero-image-placeholder {
-  background: rgba(255,255,255,0.05);
-  border: 2px dashed rgba(200,150,12,0.3);
+.hero-image {
   border-radius: 12px;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.35);
-  font-size: 0.875rem;
-  gap: 10px;
-  letter-spacing: 0.5px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
 }
 
-.hero-image-placeholder svg {
-  opacity: 0.4;
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
 }
 
 /* ── HERO STATS BAR ── */
@@ -780,18 +804,18 @@ ul { list-style: none; }
   line-height: 1.5;
 }
 
-.about-image-placeholder {
-  background: rgba(255,255,255,0.05);
-  border: 2px dashed rgba(255,255,255,0.15);
+.about-image {
   border-radius: 12px;
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.3);
-  font-size: 0.8rem;
-  gap: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
 }
 
 /* ── CONTACT STRIP ── */
@@ -879,11 +903,24 @@ ul { list-style: none; }
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
+.footer-brand-logos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
 .footer-brand-img {
   width: 52px;
   height: 52px;
   object-fit: contain;
-  margin-bottom: 14px;
+}
+
+.footer-brand-logo-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.2);
+  flex-shrink: 0;
 }
 
 .footer-brand-name {

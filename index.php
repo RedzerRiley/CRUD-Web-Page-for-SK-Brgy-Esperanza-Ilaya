@@ -66,7 +66,6 @@ function truncate($text, $limit = 120) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Official website of the Sangguniang Kabataan of Barangay Esperanza Ilaya. Stay updated on projects, programs, events, and announcements." />
   <title>SK Barangay Esperanza Ilaya — Official Website</title>
-  <link rel="icon" type="image/png" href="/assets/images/sk-logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
@@ -97,6 +96,7 @@ function truncate($text, $limit = 120) {
   <div class="container">
     <a href="index.php" class="nav-brand">
       <img src="assets/images/sk-logo.png" alt="SK Logo" class="nav-brand-img" />
+      <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="nav-brand-img" />
       <div class="nav-brand-text">
         <span class="title">SK Esperanza Ilaya</span>
         <span class="subtitle">Sangguniang Kabataan</span>
@@ -143,12 +143,8 @@ function truncate($text, $limit = 120) {
       </div>
     </div>
 
-    <div class="hero-image-placeholder">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
-      </svg>
-      Hero Banner Image
+    <div class="hero-image">
+      <img src="assets/images/hero-section.png" alt="SK Barangay Esperanza Ilaya" />
     </div>
   </div>
 </section>
@@ -331,12 +327,8 @@ function truncate($text, $limit = 120) {
         Learn More <i class="bi bi-arrow-right"></i>
       </a>
     </div>
-    <div class="about-image-placeholder">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
-      </svg>
-      SK Photo / Banner
+    <div class="about-image">
+      <img src="assets/images/about-strip.png" alt="SK Barangay Esperanza Ilaya" />
     </div>
   </div>
 </section>
@@ -395,7 +387,11 @@ function truncate($text, $limit = 120) {
   <div class="container">
     <div class="footer-grid">
       <div>
-        <img src="assets/images/sk-logo.png" alt="SK Logo" class="footer-brand-img" />
+        <div class="footer-brand-logos">
+          <img src="assets/images/sk-logo.png" alt="SK Logo" class="footer-brand-img" />
+          <div class="footer-brand-logo-divider"></div>
+          <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="footer-brand-img" />
+        </div>
         <div class="footer-brand-name">SK Barangay Esperanza Ilaya</div>
         <div class="footer-brand-sub">Sangguniang Kabataan</div>
         <p class="footer-brand-desc">

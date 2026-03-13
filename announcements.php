@@ -748,6 +748,7 @@ function pageUrl($page, $search, $category, $status) {
     <div class="footer-grid">
       <div>
          <img src="assets/images/sk-logo.png" alt="SK Logo" class="nav-brand-img" />
+         <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="footer-brand-img" />
         <div class="footer-brand-name">SK Barangay Esperanza Ilaya</div>
         <div class="footer-brand-sub">Sangguniang Kabataan</div>
         <p class="footer-brand-desc">

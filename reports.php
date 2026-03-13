@@ -523,7 +523,6 @@ function truncate($text, $limit = 130) {
       <div>
         <div class="footer-brand-logos">
           <img src="assets/images/sk-logo.png" alt="SK Logo" class="footer-brand-img" />
-          <div class="footer-brand-logo-divider"></div>
           <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="footer-brand-img" />
         </div>
         <div class="footer-brand-name">SK Barangay Esperanza Ilaya</div>

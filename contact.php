@@ -9,7 +9,6 @@ require_once 'includes/db.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contact the Sangguniang Kabataan of Barangay Esperanza Ilaya." />
   <title>Contact Us — SK Barangay Esperanza Ilaya</title>
-  <link rel="icon" type="image/png" href="/assets/images/sk-logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <style>
@@ -344,6 +343,7 @@ require_once 'includes/db.php';
   <div class="container">
     <a href="index.php" class="nav-brand">
       <img src="assets/images/sk-logo.png" alt="SK Logo" class="nav-brand-img" />
+      <div class="nav-brand-divider"></div>
       <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="nav-brand-img" />
       <div class="nav-brand-text">
         <span class="title">SK Esperanza Ilaya</span>
@@ -491,24 +491,14 @@ require_once 'includes/db.php';
             <h3>Barangay Esperanza Ilaya</h3>
           </div>
 
-          <!-- Replace this div with an actual Google Maps embed iframe -->
-          <div class="contact-map-embed">
-            <i class="bi bi-map"></i>
-            <p>
-              Replace this with a Google Maps embed.<br>
-              Go to Google Maps → Share → Embed a map → copy the iframe.
-            </p>
-          </div>
-          <!-- Example embed:
           <iframe
-            src="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL"
-            width="100%" height="320" style="border:0;" allowfullscreen=""
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.24745362195!2d120.87615117509712!3d14.121539886310023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd9d664a92dcbf%3A0xe90f8eecf345c920!2sEsperanza%20Ilaya%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1773489884574!5m2!1sen!2sph"
+            width="100%" height="320" style="border:0;display:block;" allowfullscreen=""
             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
-          -->
 
           <div class="contact-map-footer">
-            <a href="https://maps.google.com" target="_blank">
+            <a href="https://maps.google.com/?q=Esperanza+Ilaya+Barangay+Hall" target="_blank">
               <i class="bi bi-box-arrow-up-right"></i>
               Open in Google Maps
             </a>
@@ -562,8 +552,11 @@ require_once 'includes/db.php';
   <div class="container">
     <div class="footer-grid">
       <div>
-        <img src="assets/images/sk-logo.png" alt="SK Logo" class="footer-brand-img" />
-        <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="footer-brand-img" />
+        <div class="footer-brand-logos">
+          <img src="assets/images/sk-logo.png" alt="SK Logo" class="footer-brand-img" />
+          <div class="footer-brand-logo-divider"></div>
+          <img src="assets/images/brgy-logo.png" alt="Barangay Logo" class="footer-brand-img" />
+        </div>
         <div class="footer-brand-name">SK Barangay Esperanza Ilaya</div>
         <div class="footer-brand-sub">Sangguniang Kabataan</div>
         <p class="footer-brand-desc">
